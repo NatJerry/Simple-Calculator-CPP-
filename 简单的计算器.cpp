@@ -1,9 +1,9 @@
-//(ĞØÓĞ³ÉÖñµÄ):ÒòÎªÕâ¸öÔ´Âë·Ç³£µÄ¼òµ¥£¬ËùÒÔ²»×¢ÊÍÁË£¬Ó¦¸Ã¶¼¿´µÄ¶®°Ñ£¿ 
+//(èƒ¸æœ‰æˆç«¹çš„):å› ä¸ºè¿™ä¸ªæºç éå¸¸çš„ç®€å•ï¼Œæ‰€ä»¥ä¸æ³¨é‡Šäº†ï¼Œåº”è¯¥éƒ½çœ‹çš„æ‡‚æŠŠï¼Ÿ 
 #include<iostream>
 #include<cstdlib>
 using namespace std;
 int main() {
-	system("title ¼òµ¥µÄ¼ÆËãÆ÷");
+	system("title ç®€å•çš„è®¡ç®—å™¨");
 	system("mode con cols=52 lines=25");
 	int fangfa = 0;
 	double Version = 0.6;
@@ -11,17 +11,17 @@ int main() {
 chongqijisuanqi:
 	system("color 7");
 kaishi:
-	cout << "ÇëÊäÈëÄúÒªÊ¹ÓÃµÄÄ£Ê½:" << endl;
-	cout << "1=¼Ó·¨" << endl;
-	cout << "2=¼õ·¨" << endl;
-	cout << "3=³Ë·¨" << endl;
-	cout << "4=³ı·¨" << endl;
-	cout << "5=¼ÆËãÔ²µÄÖÜ³¤(Ö»±£Áô2Î»Ğ¡Êı)" << endl;
-	cout << "6=¼ÆËãÔ²µÄÃæ»ı(Ö»±£Áô2Î»Ğ¡Êı)" << endl;
-	cout << "7=ÓĞ¹ØÕâ¸ö¼ÆËãÆ÷" << endl;
-	cout << "8=ÇĞ»»×ÖÌåÑÕÉ«" << endl;
-	cout << "9=ÏÂÒ»Ò³" << endl;
-	cout << "Ò³Êı1/2" << endl;
+	cout << "è¯·è¾“å…¥æ‚¨è¦ä½¿ç”¨çš„æ¨¡å¼:" << endl;
+	cout << "1=åŠ æ³•" << endl;
+	cout << "2=å‡æ³•" << endl;
+	cout << "3=ä¹˜æ³•" << endl;
+	cout << "4=é™¤æ³•" << endl;
+	cout << "5=è®¡ç®—åœ†çš„å‘¨é•¿(åªä¿ç•™2ä½å°æ•°)" << endl;
+	cout << "6=è®¡ç®—åœ†çš„é¢ç§¯(åªä¿ç•™2ä½å°æ•°)" << endl;
+	cout << "7=æœ‰å…³è¿™ä¸ªè®¡ç®—å™¨" << endl;
+	cout << "8=åˆ‡æ¢å­—ä½“é¢œè‰²" << endl;
+	cout << "9=ä¸‹ä¸€é¡µ" << endl;
+	cout << "é¡µæ•°1/2" << endl;
 	cin >> fangfa;
 
 
@@ -42,20 +42,20 @@ kaishi:
 yunsuan:
 	switch (fangfa) {
 	case 1: {
-		cout << "ÇëÑ¡Ôñ¶àÉÙÎ»µÄ¼ÓÊı" << endl;
-		cout << "2=2Î»¼ÓÊı" << endl;
-		cout << "3=3Î»" << endl;
-		cout << "4=4Î»" << endl;
+		cout << "è¯·é€‰æ‹©å¤šå°‘ä½çš„åŠ æ•°" << endl;
+		cout << "2=2ä½åŠ æ•°" << endl;
+		cout << "3=3ä½" << endl;
+		cout << "4=4ä½" << endl;
 		cin >> jisuanfangfa;
 		switch (jisuanfangfa) {
 		case 2: {
-			cout << "ÊäÈë¼ÓÊı(1)" << endl;
+			cout << "è¾“å…¥åŠ æ•°(1)" << endl;
 			cin >> num1;
-			cout << "ÊäÈë¼ÓÊı(2)" << endl;
+			cout << "è¾“å…¥åŠ æ•°(2)" << endl;
 			cin >> num2;
 			dengyu = num1 + num2;
-			cout << "ÄúÔËËãµÄ·½Ê½Îª" << num1 << "+" << num2 << endl;
-			cout << "½á¹ûÊÇ£º" << dengyu << endl;
+			cout << "æ‚¨è¿ç®—çš„æ–¹å¼ä¸º" << num1 << "+" << num2 << endl;
+			cout << "ç»“æœæ˜¯ï¼š" << dengyu << endl;
 			system("pause");
 			system("cls");
 			goto kaishi;
@@ -63,39 +63,39 @@ yunsuan:
 			break;
 		}
 		case 3: {
-			cout << "ÊäÈë¼ÓÊı(1)" << endl;
+			cout << "è¾“å…¥åŠ æ•°(1)" << endl;
 			cin >> num1;
-			cout << "ÊäÈë¼ÓÊı(2)" << endl;
+			cout << "è¾“å…¥åŠ æ•°(2)" << endl;
 			cin >> num2;
-			cout << "ÊäÈë¼ÓÊı(3)" << endl;
+			cout << "è¾“å…¥åŠ æ•°(3)" << endl;
 			cin >> num3;
 			dengyu = num1 + num2 + num3;
-			cout << "ÄúÔËËãµÄ·½Ê½Îª" << num1 << "+" << num2 << "+" << num3 << endl;
-			cout << "½á¹ûÊÇ£º" << dengyu << endl;
+			cout << "æ‚¨è¿ç®—çš„æ–¹å¼ä¸º" << num1 << "+" << num2 << "+" << num3 << endl;
+			cout << "ç»“æœæ˜¯ï¼š" << dengyu << endl;
 			system("pause");
 			system("cls");
 			goto kaishi;
 			break;
 		}
 		case 4: {
-			cout << "ÊäÈë¼ÓÊı(1)" << endl;
+			cout << "è¾“å…¥åŠ æ•°(1)" << endl;
 			cin >> num1;
-			cout << "ÊäÈë¼ÓÊı(2)" << endl;
+			cout << "è¾“å…¥åŠ æ•°(2)" << endl;
 			cin >> num2;
-			cout << "ÊäÈë¼ÓÊı(3)" << endl;
+			cout << "è¾“å…¥åŠ æ•°(3)" << endl;
 			cin >> num3;
-			cout << "ÊäÈë¼ÓÊı(4)" << endl;
+			cout << "è¾“å…¥åŠ æ•°(4)" << endl;
 			cin >> num4;
 			dengyu = num1 + num2 + num3 + num4;
-			cout<<"Äú¼ÆËãµÄËãÊ½Îª:"<<num1<<"+"<<num2<<"+"<<num3<<"+"<<num4<<endl;
-			cout << "½á¹ûÊÇ£º" << dengyu << endl;
+			cout<<"æ‚¨è®¡ç®—çš„ç®—å¼ä¸º:"<<num1<<"+"<<num2<<"+"<<num3<<"+"<<num4<<endl;
+			cout << "ç»“æœæ˜¯ï¼š" << dengyu << endl;
 			system("pause");
 			system("cls");
 			goto kaishi;
 			break;
 		}
 		default: {
-			cout << "Äã¾ÍÂÒÊä°Ñ\n";
+			cout << "ä½ å°±ä¹±è¾“æŠŠ\n";
 			system("pause");
 			system("cls");
 
@@ -106,69 +106,69 @@ yunsuan:
 		break;
 	}
 	case 2: {
-		cout << "ÇëÊäÈë±»¼õÊı(1)" << endl;
+		cout << "è¯·è¾“å…¥è¢«å‡æ•°(1)" << endl;
 		cin >> num1;
-		cout << "ÇëÊäÈë¼õÊı(2)" << endl;
+		cout << "è¯·è¾“å…¥å‡æ•°(2)" << endl;
 		cin >> num2;
 		dengyu = num1 - num2;
-		cout << "Äú¼ÆËãµÄËãÊ½Îª:" << num1 << "-" << num2;
-		cout << "½á¹ûÎª£º" << dengyu << endl;
+		cout << "æ‚¨è®¡ç®—çš„ç®—å¼ä¸º:" << num1 << "-" << num2;
+		cout << "ç»“æœä¸ºï¼š" << dengyu << endl;
 		system("pause");
 		system("cls");
 		goto kaishi;
 		break;
 	}
 	case 3: {
-		cout << "ÇëÊäÈë³Ë·¨¼ÆËãµÄÄ£Ê½(2=2Î»³ËÊı½øĞĞÔËËã¡¢3=3Î»¡¢4=4Î»):" << endl;
+		cout << "è¯·è¾“å…¥ä¹˜æ³•è®¡ç®—çš„æ¨¡å¼(2=2ä½ä¹˜æ•°è¿›è¡Œè¿ç®—ã€3=3ä½ã€4=4ä½):" << endl;
 		cin >> jisuanfangfa;
 		switch (jisuanfangfa) {
 		case 2: {
-			cout << "ÇëÊäÈë³ËÊı(1):" << endl;
+			cout << "è¯·è¾“å…¥ä¹˜æ•°(1):" << endl;
 			cin >> num1;
-			cout << "ÇëÊäÈë³ËÊı(2):" << endl;
+			cout << "è¯·è¾“å…¥ä¹˜æ•°(2):" << endl;
 			cin >> num2;
 			dengyu = num1 * num2;
-			cout << "Äú¼ÆËãµÄËãÊ½Îª:" << num1 << "*" << num2 << endl;
-			cout << "½á¹ûÎª:" << dengyu << endl;
+			cout << "æ‚¨è®¡ç®—çš„ç®—å¼ä¸º:" << num1 << "*" << num2 << endl;
+			cout << "ç»“æœä¸º:" << dengyu << endl;
 			system("pause");
 			system("cls");
 			goto kaishi;
 			break;
 		}
 		case 3: {
-			cout << "ÇëÊäÈë³ËÊı(1):" << endl;
+			cout << "è¯·è¾“å…¥ä¹˜æ•°(1):" << endl;
 			cin >> num1;
-			cout << "ÇëÊäÈë³ËÊı(2)" << endl;
+			cout << "è¯·è¾“å…¥ä¹˜æ•°(2)" << endl;
 			cin >> num2;
-			cout << "ÇëÊäÈë³ËÊı(3)" << endl;
+			cout << "è¯·è¾“å…¥ä¹˜æ•°(3)" << endl;
 			cin >> num3;
 			dengyu = num1 * num2 * num3;
-			cout << "Äú¼ÆËãµÄËãÊ½Îª:" << num1 << "*" << num2 << "*" << num3 << endl;
-			cout << "½á¹ûÎª:" << dengyu << endl;
+			cout << "æ‚¨è®¡ç®—çš„ç®—å¼ä¸º:" << num1 << "*" << num2 << "*" << num3 << endl;
+			cout << "ç»“æœä¸º:" << dengyu << endl;
 			system("pause");
 			system("cls");
 			goto kaishi;
 			break;
 		}
 		case 4: {
-			cout << "ÇëÊäÈë³ËÊı(1):" << endl;
+			cout << "è¯·è¾“å…¥ä¹˜æ•°(1):" << endl;
 			cin >> num1;
-			cout << "ÇëÊäÈë³ËÊı(2)" << endl;
+			cout << "è¯·è¾“å…¥ä¹˜æ•°(2)" << endl;
 			cin >> num2;
-			cout << "ÇëÊäÈë³ËÊı(3)" << endl;
+			cout << "è¯·è¾“å…¥ä¹˜æ•°(3)" << endl;
 			cin >> num3;
-			cout << "ÇëÊäÈë³ËÊı(4)" << endl;
+			cout << "è¯·è¾“å…¥ä¹˜æ•°(4)" << endl;
 			cin >> num4;
 			dengyu = num1 * num2 * num3 * num4;
-			cout << "Äú¼ÆËãµÄËãÊ½Îª:" << num1 << "*" << num2 << "*" << num3 << "*" << num4;
-			cout << "½á¹ûÎª:" << dengyu << endl;
+			cout << "æ‚¨è®¡ç®—çš„ç®—å¼ä¸º:" << num1 << "*" << num2 << "*" << num3 << "*" << num4;
+			cout << "ç»“æœä¸º:" << dengyu << endl;
 			system("pause");
 			system("cls");
 			goto kaishi;
 			break;
 		}
 		default: {
-			cout << "Äã¾ÍÂÒÊä°Ñ\n";
+			cout << "ä½ å°±ä¹±è¾“æŠŠ\n";
 			system("pause");
 			system("cls");
 
@@ -179,50 +179,50 @@ yunsuan:
 		break;
 	}
 	case 4: {
-		cout << "ÇëÊäÈë±»³ıÊı(1)" << endl;
+		cout << "è¯·è¾“å…¥è¢«é™¤æ•°(1)" << endl;
 		cin >> num1;
-		cout << "ÇëÊäÈë³ıÊı(2)" << endl;
+		cout << "è¯·è¾“å…¥é™¤æ•°(2)" << endl;
 		cin >> num2;
 		dengyu = num1 / num2;
-		cout << "Äú¼ÆËãµÄËãÊ½Îª:" << num1 << "/" << num2 << endl;
-		cout << "ÄãµÄ½á¹ûÎª£º" << dengyu << endl;
+		cout << "æ‚¨è®¡ç®—çš„ç®—å¼ä¸º:" << num1 << "/" << num2 << endl;
+		cout << "ä½ çš„ç»“æœä¸ºï¼š" << dengyu << endl;
 		system("pause");
 		system("cls");
 		goto kaishi;
 		break;
 	}
 	case 5: {
-		cout << "¼ÆËã·½·¨£º" << endl;
-		cout << "1=Ö±¾¶¼ÆËãÖÜ³¤" << endl;
-		cout << "2=°ë¾¶ÇóÖÜ³¤" << endl;
+		cout << "è®¡ç®—æ–¹æ³•ï¼š" << endl;
+		cout << "1=ç›´å¾„è®¡ç®—å‘¨é•¿" << endl;
+		cout << "2=åŠå¾„æ±‚å‘¨é•¿" << endl;
 		cin >> jisuanfangfa;
 		switch (jisuanfangfa) {
 		case 1: {
-			cout << "ÊäÈëÖ±¾¶:";
+			cout << "è¾“å…¥ç›´å¾„:";
 			cin >> zj;
 			dengyu = PI * zj;
-			cout << "Äú¼ÆËãÔ²ÖÜ³¤µÄ·½·¨ÎªÖ±¾¶ÇóÖÜ³¤:" << PI << "£¨È¡Öµµ½3.14£©" << "*" << zj << endl;
+			cout << "æ‚¨è®¡ç®—åœ†å‘¨é•¿çš„æ–¹æ³•ä¸ºç›´å¾„æ±‚å‘¨é•¿:" << PI << "ï¼ˆå–å€¼åˆ°3.14ï¼‰" << "*" << zj << endl;
 			cout << "" << endl;
-			cout << "Õâ¸öÔ²ĞÎµÄÖÜ³¤Îª:" << dengyu << endl;
+			cout << "è¿™ä¸ªåœ†å½¢çš„å‘¨é•¿ä¸º:" << dengyu << endl;
 			system("pause");
 			system("cls");
 			goto kaishi;
 			break;
 		}
 		case 2: {
-			cout << "ÊäÈë°ë¾¶:";
+			cout << "è¾“å…¥åŠå¾„:";
 			cin >> bj;
 			dengyu = PI * bj * 2;
-			cout << "Äú¼ÆËãÔ²ÖÜ³¤·½·¨Îª°ë¾¶ÇóÖÜ³¤:" << "£¨¦°È¡Öµµ½3.14£©" << PI << "*" << bj << "*" << "2" << endl;
+			cout << "æ‚¨è®¡ç®—åœ†å‘¨é•¿æ–¹æ³•ä¸ºåŠå¾„æ±‚å‘¨é•¿:" << "ï¼ˆÎ å–å€¼åˆ°3.14ï¼‰" << PI << "*" << bj << "*" << "2" << endl;
 			cout << "" << endl;
-			cout << "Õâ¸öÔ²ĞÎµÄÖÜ³¤Îª:" << dengyu << endl;
+			cout << "è¿™ä¸ªåœ†å½¢çš„å‘¨é•¿ä¸º:" << dengyu << endl;
 			system("pause");
 			system("cls");
 			goto kaishi;
 			break;
 		}
 		default: {
-			cout << "Äã¾ÍÂÒÊä°É\n";
+			cout << "ä½ å°±ä¹±è¾“å§\n";
 			system("pause");
 			system("cls");
 			goto yunsuan;
@@ -234,35 +234,35 @@ yunsuan:
 		break;
 	}
 	case 6: {
-		cout << "ÇëÑ¡Ôñ¼ÆËã·½·¨:" << endl;
-		cout << "1=ÒÑÖª°ë¾¶ÇóÃæ»ı" << endl;
-		cout << "2=ÒÑÖªÖ±¾¶ÇóÃæ»ı" << endl;
+		cout << "è¯·é€‰æ‹©è®¡ç®—æ–¹æ³•:" << endl;
+		cout << "1=å·²çŸ¥åŠå¾„æ±‚é¢ç§¯" << endl;
+		cout << "2=å·²çŸ¥ç›´å¾„æ±‚é¢ç§¯" << endl;
 		cin >> jisuanfangfa;
 		switch (jisuanfangfa) {
 		case 1: {
-			cout << "ÇëÊäÈëÄãÒÑÖªµÄ°ë¾¶:";
+			cout << "è¯·è¾“å…¥ä½ å·²çŸ¥çš„åŠå¾„:";
 			cin >> bj;
 			cout << "" << endl;
 			mj = PI * (bj * bj);
-			cout << "Ãæ»ıÎª:" << mj << endl;
+			cout << "é¢ç§¯ä¸º:" << mj << endl;
 			system("pause");
 			system("cls");
 			goto kaishi;
 			break;
 		}
 		case 2: {
-			cout << "ÇëÊäÈëÄãÒÑÖªµÄÖ±¾¶";
+			cout << "è¯·è¾“å…¥ä½ å·²çŸ¥çš„ç›´å¾„";
 			cin >> zj;
 			cout << "" << endl;
 			mj = PI * (zj / 2) * (zj / 2);
-			cout << "Ãæ»ıÎª:" << mj << endl;
+			cout << "é¢ç§¯ä¸º:" << mj << endl;
 			system("pause");
 			system("cls");
 			goto kaishi;
 			break;
 		}
 		default: {
-			cout << "Äã¾ÍÂÒÊä°É\n";
+			cout << "ä½ å°±ä¹±è¾“å§\n";
 			system("pause");
 			system("cls");
 			goto yunsuan;
@@ -273,30 +273,29 @@ yunsuan:
 		}
 	}
 	case 7: {
-		cout << "¹ã¸æ:ÎÒÊÇÑ§Éú£¬Ò»¸öÕæÕı¶®Ñ§ÉúµÄÓÎÏ·£¬C++±àĞ´£¬Õ¼ÓÃĞ¡¹¦ÄÜ¶à£¬ÏÖÔÚ¾ÍÀ´928034473ÁË½â×îĞÂBeta°æ£¡" << endl;
-		cout << "°æ±¾:" << Version << "¹«¿ª²âÊÔ°æ" << endl;
-		cout << "°æÈ¨ËùÓĞ:Jerry" << endl;
+		cout << "ç‰ˆæœ¬:" << Version << "å…¬å¼€æµ‹è¯•ç‰ˆ" << endl;
+		cout << "ç‰ˆæƒæ‰€æœ‰:Jerry" << endl;
 		system("pause");
 		system("cls");
 		goto kaishi;
 		break;
 	}
 	case 8: {
-		cout << "ÇëÑ¡ÔñÑÕÉ«\n";
-		cout << "1=À¶É«×ÖÌå\n";
-		cout << "2=ÂÌÉ«×ÖÌå\n";
-		cout << "3=Ç³ÂÌ×ÖÌå(Ó¦¸ÃÊÇÇ³À¶)\n";
-		cout << "4=ºìÉ«×ÖÌå\n";
-		cout << "5=×ÏÉ«×ÖÌå(À¶É«)\n";
-		cout << "6=»ÆÉ«×ÖÌå\n";
-		cout << "7=°×É«×ÖÌå\n";
-		cout << "8=»ÒÉ«×ÖÌå\n";
-		cout << "9=»Ö¸´Ä¬ÈÏ\n";
+		cout << "è¯·é€‰æ‹©é¢œè‰²\n";
+		cout << "1=è“è‰²å­—ä½“\n";
+		cout << "2=ç»¿è‰²å­—ä½“\n";
+		cout << "3=æµ…ç»¿å­—ä½“(åº”è¯¥æ˜¯æµ…è“)\n";
+		cout << "4=çº¢è‰²å­—ä½“\n";
+		cout << "5=ç´«è‰²å­—ä½“(è“è‰²)\n";
+		cout << "6=é»„è‰²å­—ä½“\n";
+		cout << "7=ç™½è‰²å­—ä½“\n";
+		cout << "8=ç°è‰²å­—ä½“\n";
+		cout << "9=æ¢å¤é»˜è®¤\n";
 		cin >> color;
 		switch (color) {
 		case 1: {
 			system("color 1");
-			cout << "ÇĞ»»³É¹¦\n";
+			cout << "åˆ‡æ¢æˆåŠŸ\n";
 			system("pause");
 			system("cls");
 			goto kaishi;
@@ -304,7 +303,7 @@ yunsuan:
 		}
 		case 2: {
 			system("color 2");
-			cout << "ÇĞ»»³É¹¦\n";
+			cout << "åˆ‡æ¢æˆåŠŸ\n";
 			system("pause");
 			system("cls");
 			goto kaishi;
@@ -312,7 +311,7 @@ yunsuan:
 		}
 		case 3: {
 			system("color 3");
-			cout << "ÇĞ»»³É¹¦\n";
+			cout << "åˆ‡æ¢æˆåŠŸ\n";
 			system("pause");
 			system("cls");
 			goto kaishi;
@@ -320,7 +319,7 @@ yunsuan:
 		}
 		case 4: {
 			system("color 4");
-			cout << "ÇĞ»»³É¹¦\n";
+			cout << "åˆ‡æ¢æˆåŠŸ\n";
 			system("pause");
 			system("cls");
 			goto kaishi;
@@ -328,7 +327,7 @@ yunsuan:
 		}
 		case 5: {
 			system("color 1");
-			cout << "ÇĞ»»³É¹¦\n";
+			cout << "åˆ‡æ¢æˆåŠŸ\n";
 			system("pause");
 			system("cls");
 			goto kaishi;
@@ -336,7 +335,7 @@ yunsuan:
 		}
 		case 6: {
 			system("color 6");
-			cout << "ÇĞ»»³É¹¦\n";
+			cout << "åˆ‡æ¢æˆåŠŸ\n";
 			system("pause");
 			system("cls");
 			goto kaishi;
@@ -344,7 +343,7 @@ yunsuan:
 		}
 		case 7: {
 			system("color f");
-			cout << "ÇĞ»»³É¹¦\n";
+			cout << "åˆ‡æ¢æˆåŠŸ\n";
 			system("pause");
 			system("cls");
 			goto kaishi;
@@ -352,7 +351,7 @@ yunsuan:
 		}
 		case 8: {
 			system("color 8");
-			cout << "ÇĞ»»³É¹¦\n";
+			cout << "åˆ‡æ¢æˆåŠŸ\n";
 			system("pause");
 			system("cls");
 			goto kaishi;
@@ -360,14 +359,14 @@ yunsuan:
 		}
 		case 9: {
 			system("color 7");
-			cout << "ÇĞ»»³É¹¦\n";
+			cout << "åˆ‡æ¢æˆåŠŸ\n";
 			system("pause");
 			system("cls");
 			goto kaishi;
 			break;
 		}
 		default: {
-			cout << "Äã¾ÍÂÒÊä°Ñ\n";
+			cout << "ä½ å°±ä¹±è¾“æŠŠ\n";
 			system("pause");
 			system("cls");
 			goto yunsuan;
@@ -384,7 +383,7 @@ yunsuan:
 	}
 
 	default: {
-		cout << "Äã¾ÍÂÒÊä°Ñ\n";
+		cout << "ä½ å°±ä¹±è¾“æŠŠ\n";
 		system("pause");
 		system("cls");
 		goto kaishi;
@@ -398,13 +397,13 @@ yunsuan:
 
 
 next:
-	cout << "1=±³¾°ÑÕÉ«ÉèÖÃ\n";
-	cout << "2=Ëæ»úÊı\n";
-	cout << "3=¼ÆËã³¤·½ĞÎ»òÕı·½ĞÎµÄÖÜ³¤\n";
-	cout << "4=¼ÆËã³¤·½ĞÎ»òÕı·½ĞÎµÄÃæ»ı\n";
-	cout << "5=ÍË³ö¼ÆËãÆ÷\n";
-	cout << "0=·µ»ØÉÏÒ»Ò³\n";
-	cout << "Ò³Ãæ2/2\n";
+	cout << "1=èƒŒæ™¯é¢œè‰²è®¾ç½®\n";
+	cout << "2=éšæœºæ•°\n";
+	cout << "3=è®¡ç®—é•¿æ–¹å½¢æˆ–æ­£æ–¹å½¢çš„å‘¨é•¿\n";
+	cout << "4=è®¡ç®—é•¿æ–¹å½¢æˆ–æ­£æ–¹å½¢çš„é¢ç§¯\n";
+	cout << "5=é€€å‡ºè®¡ç®—å™¨\n";
+	cout << "0=è¿”å›ä¸Šä¸€é¡µ\n";
+	cout << "é¡µé¢2/2\n";
 	int nextinput = 0;
 	cin >> nextinput;
 	system("cls");
@@ -412,29 +411,29 @@ next:
 nextyunsuan:
 	switch (nextinput) {
 	case 1: {
-		cout << "¾´ÇëÆÚ´ı...\n";
+		cout << "æ•¬è¯·æœŸå¾…...\n";
 		system("pause");
 		system("cls");
 		goto next;
 		break;
 	}
 	case 2: {
-		cout << "¼´½«¼ÓÈë...\n";
+		cout << "å³å°†åŠ å…¥...\n";
 		system("pause");
 		system("cls");
 		goto next;
 		/*long long rand1 = 0;
 		long long rand2 = 0;
-		cout << "ÇëÊäÈë´ÓÄÄ¸öÊı¿ªÊ¼:";
+		cout << "è¯·è¾“å…¥ä»å“ªä¸ªæ•°å¼€å§‹:";
 		cin >> rand1;
 		cout << "\n";
-		cout << "ÇëÊäÈë´ÓÄÄ¸öÊı½áÊø:";
+		cout << "è¯·è¾“å…¥ä»å“ªä¸ªæ•°ç»“æŸ:";
 		cin >> rand2;
 		cout << "\n";*/
 
 	}
 	case 3: {
-		cout << "ÇëÑ¡Ôñ³¤·½ĞÎ»òÕı·½ĞÎ(1/2)\n";
+		cout << "è¯·é€‰æ‹©é•¿æ–¹å½¢æˆ–æ­£æ–¹å½¢(1/2)\n";
 		short zc = 0;
 		long double zhouchang = 0;
 		cin >> zc;
@@ -442,12 +441,12 @@ nextyunsuan:
 		case 1: {
 			long double chang = 0;
 			long double kuan = 0;
-			cout << "ÊäÈë³¤\n";
+			cout << "è¾“å…¥é•¿\n";
 			cin >> chang;
-			cout << "ÊäÈë¿í\n";
+			cout << "è¾“å…¥å®½\n";
 			cin >> kuan;
 			zhouchang = (chang + kuan) * 2;
-			cout << "ÖÜ³¤Îª:" << zhouchang << endl;
+			cout << "å‘¨é•¿ä¸º:" << zhouchang << endl;
 			system("pause");
 			system("cls");
 			goto next;
@@ -455,17 +454,17 @@ nextyunsuan:
 		}
 		case 2: {
 			long double bc = 0;
-			cout << "ÊäÈë±ß³¤:";
+			cout << "è¾“å…¥è¾¹é•¿:";
 			cin >> bc;
 			cout << "\n";
 			zhouchang = bc * 4;
-			cout << "ÖÜ³¤Îª:" << bc << "\n";
+			cout << "å‘¨é•¿ä¸º:" << bc << "\n";
 			break;
 		}
 
 
 		default: {
-			cout << "´íÎóÊı×Ö\n";
+			cout << "é”™è¯¯æ•°å­—\n";
 			system("pause");
 			system("cls");
 			goto next;
@@ -476,22 +475,22 @@ nextyunsuan:
 	case 4: {
 		int mj = 0;
 		long double mianji = 0;
-		cout << "ÇëÑ¡Ôñ¼ÆËãÃæ»ıµÄÍ¼ĞÎ\n";
-		cout << "1=³¤·½ĞÎµÄÃæ»ı¼ÆËã\n";
-		cout << "2=Õı·½ĞÎµÄÃæ»ı¼ÆËã\n";
+		cout << "è¯·é€‰æ‹©è®¡ç®—é¢ç§¯çš„å›¾å½¢\n";
+		cout << "1=é•¿æ–¹å½¢çš„é¢ç§¯è®¡ç®—\n";
+		cout << "2=æ­£æ–¹å½¢çš„é¢ç§¯è®¡ç®—\n";
 		cin >> mj;
 		switch (mj) {
 		case 1: {
 			long double chang = 0;
 			long double kuan = 0;
-			cout << "ÇëÊäÈë³¤:";
+			cout << "è¯·è¾“å…¥é•¿:";
 			cin >> chang;
 			cout << "\n";
-			cout << "ÇëÊäÈë¿í:";
+			cout << "è¯·è¾“å…¥å®½:";
 			cin >> kuan;
 			cout << "\n";
 			mianji = chang * kuan;
-			cout << "¼ÆËã³öµÄÃæ»ıÎª:" << mianji << endl;
+			cout << "è®¡ç®—å‡ºçš„é¢ç§¯ä¸º:" << mianji << endl;
 			system("pause");
 			system("cls");
 			goto next;
@@ -499,11 +498,11 @@ nextyunsuan:
 		}
 		case 2: {
 			long double chouchang = 0;
-			cout << "ÇëÊäÈëÕı·½ĞÎµÄÖÜ³¤:";
+			cout << "è¯·è¾“å…¥æ­£æ–¹å½¢çš„å‘¨é•¿:";
 			cin >> chouchang;
 			cout << "\n";
 			mianji = chouchang * chouchang;
-			cout << "¼ÆËã³öÀ´µÄÃæ»ıÎª:" << mianji << endl;
+			cout << "è®¡ç®—å‡ºæ¥çš„é¢ç§¯ä¸º:" << mianji << endl;
 			system("pause");
 			system("cls");
 			goto next;
@@ -513,26 +512,26 @@ nextyunsuan:
 	}
 	case 5: {
 		int quit = 0;
-		cout << "ÄúÈ·¶¨ÒªÍË³öÂğ£¿\n";
-		cout << "0=µã´íÁË\n";
-		cout << "1=È·¶¨\n";
-		cout << "ÇëÊäÈë:\n";
+		cout << "æ‚¨ç¡®å®šè¦é€€å‡ºå—ï¼Ÿ\n";
+		cout << "0=ç‚¹é”™äº†\n";
+		cout << "1=ç¡®å®š\n";
+		cout << "è¯·è¾“å…¥:\n";
 		cin >> quit;
 		switch (quit) {
 		case 0: {
-			cout << "ÖØÆô¼ÆËãÆ÷ÖĞ£¬ÄúÉèÖÃµÄ×ÖÌåÑÕÉ«ÒÔ¼°±³¾°ÑÕÉ«¶¼½«»Ö¸´ÎªÄ¬ÈÏ...\n";
+			cout << "é‡å¯è®¡ç®—å™¨ä¸­ï¼Œæ‚¨è®¾ç½®çš„å­—ä½“é¢œè‰²ä»¥åŠèƒŒæ™¯é¢œè‰²éƒ½å°†æ¢å¤ä¸ºé»˜è®¤...\n";
 			system("pause");
 			system("cls");
 			goto chongqijisuanqi;
 			break;
 		}
 		case 1: {
-			cout << "ÔÙ¼û,»¶Ó­ÏÂ´ÎÔÙ´ÎÊ¹ÓÃ!\n";
+			cout << "å†è§,æ¬¢è¿ä¸‹æ¬¡å†æ¬¡ä½¿ç”¨!\n";
 			goto tuichu;
 			break;
 		}
 		default: {
-			cout << "´íÎóÊı×Ö\n";
+			cout << "é”™è¯¯æ•°å­—\n";
 			system("pause");
 			system("cls");
 			goto next;
@@ -548,7 +547,7 @@ nextyunsuan:
 		break;
 	}
 	default: {
-		cout << "´íÎóÊı×Ö\n";
+		cout << "é”™è¯¯æ•°å­—\n";
 		system("pause");
 		system("cls");
 		goto next;
